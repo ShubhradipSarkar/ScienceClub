@@ -6,6 +6,7 @@ function Contacthelpdesk(){
     return(
         <div>
             <Navbar1/>
+            contact us
             <ContactForm/>
             <Footer/>
         </div>
