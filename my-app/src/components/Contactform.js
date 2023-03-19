@@ -39,16 +39,22 @@ const ContactForm = () => {
   return (
     <div className='ContactForm'>
       <div className='container'>
-        <div className='row'>
-          <div className='col-12 text-center'>
+        <div className='row d-flex flex-column flex-lg-row align-items-center'>
+          <div className="col-6 d-flex justify-center flex-column align-items-center ">
+             <h2 style={{color:"white"}}>Address</h2>
+             <p style={{color:"white"}}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam odio reiciendis rerum, fuga quod, dicta ab sequi, voluptatibus nesciunt magni maiores quisquam fugiat at voluptas illo aut laborum eius! Culpa?</p>
+          </div>
+          <div className='col-6 text-center'>
+          <h2 style={{color:"white"}}>Message Us</h2>
             <div className='contactForm'>
               <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
                 {/* Row 1 of form */}
-                <div className='row formRow'>
-                  <div className='col-6'>
+                <div className='row formRow mb-3'>
+                  <div className='col-12'>
                     <input
                       type='text'
                       name='name'
+                      required
                       {...register('name', {
                         required: { value: true, message: 'Please enter your name' },
                         maxLength: {
@@ -61,28 +67,35 @@ const ContactForm = () => {
                     ></input>
                     {errors.name && <span className='errorMessage'>{errors.name.message}</span>}
                   </div>
-                  <div className='col-6'>
+                  
+                </div>
+                <div className='row formRow mb-3'>
+
+                <div className='col-12'>
                     <input
                       type='email'
                       name='email'
+                      required
                       {...register('email', {
                         required: true,
                         pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
                       })}
                       className='form-control formInput'
                       placeholder='Email address'
-                    ></input>
+                      ></input>
                     {errors.email && (
                       <span className='errorMessage'>Please enter a valid email address</span>
-                    )}
+                      )}
                   </div>
-                </div>
+
+                  </div>
                 {/* Row 2 of form */}
-                <div className='row formRow'>
+                <div className='row formRow mb-3'>
                   <div className='col'>
                     <input
                       type='text'
                       name='subject'
+                      required
                       {...register('subject', {
                         required: { value: true, message: 'Please enter a subject' },
                         maxLength: {
@@ -99,11 +112,12 @@ const ContactForm = () => {
                   </div>
                 </div>
                 {/* Row 3 of form */}
-                <div className='row formRow'>
+                <div className='row formRow mb-3'>
                   <div className='col'>
                     <textarea
                       rows={3}
                       name='message'
+                      required
                       {...register('message', {
                         required: true
                       })}
@@ -113,7 +127,7 @@ const ContactForm = () => {
                     {errors.message && <span className='errorMessage'>Please enter a message</span>}
                   </div>
                 </div>
-                <button className='submit-btn' type='submit'>
+                <button className='submit-btn btn btn-primary mb-5 w-100' type='submit'>
                   Submit
                 </button>
               </form>

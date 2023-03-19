@@ -16,7 +16,7 @@ function People(props){
     return(
         <div className="people d-flex flex-column align-item-center">
             
-            <img src={props.dp} alt="dp"  className="img w-100"/>
+            <img src={props.dp} alt="dp"  className="img w-100 h-50"/>
             <center></center>
             <div className='leafy'><p className='card-name'>{props.name}</p> 
             <img src={require('../../src/images/leaf.png')} alt="" className='leaf'/></div>
