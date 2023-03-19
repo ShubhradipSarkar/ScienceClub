@@ -32,7 +32,7 @@ function Group(){
                 <People name="soumya" designation="nothing" dp={errpic} className="indi"/>
                 <People name="tamo" designation="lol" dp={errpic} className="indi"/>
                 <People name="subrata" designation="sovapoti" dp={errpic} className="indi"/>
-                <People name="sankho" designation="project co" dp={errpic} className="indi"/>
+                
                 
             </div>
             <div className="peeps">
@@ -40,8 +40,12 @@ function Group(){
                 <People name="soumya" designation="nothing" dp={errpic} className="indi"/>
                 <People name="tamo" designation="lol" dp={errpic} className="indi"/>
                 <People name="subrata" designation="sovapoti" dp={errpic} className="indi"/>
-                <People name="sankho" designation="project co" dp={errpic} className="indi"/>
+                
                
+            </div>
+            <div>
+            <People name="sankho" designation="project co" dp={errpic} className="indi"/>
+            <People name="sankho" designation="project co" dp={errpic} className="indi"/>
             </div>
 
         </div>

@@ -32,7 +32,7 @@ function Navbar1(props) {
     });
   }, []);
   return (
-    <div>
+    <div >
            
     
       <div style={{backgroundColor:'white'}}>
@@ -45,7 +45,7 @@ function Navbar1(props) {
       </div>
       </div>
     
-      <Navbar className="nav"  expand="lg" sticky="top">
+      <Navbar className="nav "  expand="lg" sticky="top">
         <Container className="container">
             {/* \\\\\\\\\\\\\\\\\\\Navbar Backup\\\\\\\\\\\\\\\\\\\\\\ */}
         {/* <div className='toplogo'><div className="logo"><img src={require('../../src/images/LOGO.png')} alt="logo" /></div> <h1 style={{color:'black', padding:'8px'}}>  শান্তিপুর সায়েন্স ক্লাব</h1></div> */}
