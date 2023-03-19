@@ -22,7 +22,7 @@ function People(props){
             <img src={require('../../src/images/leaf.png')} alt="" className='leaf'/></div>
             <p className='card-desig'>{props.designation}</p>
             <center><a href={props.id}>
-        <Button variant='primary' size='md' className='align-items-center w-100'>View</Button>
+        <Button variant='primary' size='md' className='align-items-center w-100'>View details</Button>
       </a></center>
       
         </div>
